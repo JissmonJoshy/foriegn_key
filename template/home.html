@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('https://img.freepik.com/free-photo/free-time-students-bachelor-s-campus-life-rhythm-five-friendly-students-are-walking_8353-6408.jpg?t=st=1724387071~exp=1724390671~hmac=a4ec52e8bae8ab3a08e0341a7c76e98b8be0ae5aa0dab7fda343caa54a0f6a5c&w=740'); /* Replace with the URL of your image */
+            background-size: cover; /* Ensure the image covers the whole background */
+            background-repeat: no-repeat; /* Prevent repeating the image */
+            background-attachment: fixed; /* Keep the image fixed during scrolling */
+            background-position: center center; /* Center the image */
+            color: #3d3737; /* Optional: Adjust text color for better visibility on dark backgrounds */
+        }
+        .container {
+            margin-top: 50px; /* Adjust the top margin as needed */
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="{% url 'home' %}">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'add_course' %}">Add Course</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'add_student' %}">Add Student</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'show_student_details' %}">Show Student Details</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mt-5">
+        <!-- Your content here -->
+    </div>
+
+    <!-- Optional JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
